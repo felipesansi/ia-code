@@ -1,0 +1,91 @@
+Id,Code,Language
+1,   if x > 10: print('maior'),Python
+2,for i in range(5): print(i),Python
+3,"with open('file.txt', 'r') as f: data = f.read()",Python
+4,"with open('file.txt', 'r') as f: data = f.read()",Python
+5,   for i in range(5): print(i)   ,Python
+6,print('Olá Mundo'),Python
+7,print('Olá Mundo'),python
+8,   for i in range(5): print(i),Python
+9,"   with open('file.txt', 'r') as f: data = f.read()",Python
+10,"with open('file.txt', 'r') as f: data = f.read()",Python
+11,if x > 10: print('maior'),Python
+12,   print('Olá Mundo'),Python
+13,"with open('file.txt', 'r') as f: data = f.read()",Python
+14,   if x > 10: print('maior'),Python
+15,"   def soma(a, b): return a + b",python
+16,"function soma(a,b){ return a+b ;  }   ",JavaScript
+17,for(let i=0; i<5; i++){ console.log(i); }   ,JavaScript
+18,   for(let i=0; i<5; i++){ console.log(i); },JavaScript
+19,   if(x>10){ alert('maior'); },JavaScript
+20,   for(let i=0 ;  i<5 ;  i++){ console.log(i) ;  },JavaScript
+21,console.log('Hello World');,javascript
+22,console.log('Hello World') ; ,JavaScript
+23,"function soma(a,b){ return a+b; }",JavaScript
+24,"   let arr = [1,2,3]; arr.forEach(x=>console.log(x));",JavaScript
+25,console.log('Hello World');,JavaScript
+26,for(let i=0; i<5; i++){ console.log(i); },JavaScript
+27,for(let i=0; i<5; i++){ console.log(i); },JavaScript
+28,"let arr = [1,2,3]; arr.forEach(x=>console.log(x));   ",JavaScript
+29,if(x>10){ alert('maior'); }   ,javascript
+30,"let arr = [1,2,3]; arr.forEach(x=>console.log(x));",JavaScript
+31,SELECT name FROM users WHERE age>20;   ,SQL
+32,   SELECT * FROM users;   ,SQL
+33,DELETE FROM users WHERE id=2;,SQL
+34,DELETE FROM users WHERE id=2;,SQL
+35,SELECT * FROM users ;    ,SQL
+36,UPDATE users SET age=30 WHERE id=1 ;    ,SQL
+37,UPDATE users SET age=30 WHERE id=1;,SQL
+38,   SELECT * FROM users;   ,SQL
+39,UPDATE users SET age=30 WHERE id=1;   ,SQL
+40,SELECT * FROM users;,sql
+41,SELECT name FROM users WHERE age>20;,SQL
+42,SELECT * FROM users;,SQL
+43,UPDATE users SET age=30 WHERE id=1;,SQL
+44,UPDATE users SET age=30 WHERE id=1 ; ,SQL
+45,"   INSERT INTO users(name, age) VALUES('Ana',25);",SQL
+46,   public class Main { public static void main(String[] args){ System.out.println('Oi'); } }   ,Java
+47,String nome = 'Ana' ; ,Java
+48,   String nome = 'Ana';   ,Java
+49,String nome = 'Ana';,Java
+50,   String nome = 'Ana';   ,Java
+51,String nome = 'Ana' ; ,Java
+52,"int soma(int a, int b){ return a+b; }   ",Java
+53,if(x>10){ System.out.println('maior'); }   ,Java
+54,"int soma(int a, int b){ return a+b; }",Java
+55,   for(int i=0;i<5;i++){ System.out.println(i); },Java
+56,public class Main { public static void main(String[] args){ System.out.println('Oi') ;  } }   ,Java
+57,   if(x>10){ System.out.println('maior') ;  },Java
+58,   public class Main { public static void main(String[] args){ System.out.println('Oi'); } }   ,Java
+59,   String nome = 'Ana';   ,Java
+60,for(int i=0;i<5;i++){ System.out.println(i); },Java
+61,echo 'Olá Mundo'   ,Bash
+62,ls -la   ,Bash
+63,cat file.txt   ,Bash
+64,echo 'Olá Mundo',Bash
+65,   ls -la,Bash
+66,ls -la,Bash
+67,for i in {1..5}; do echo $i; done   ,Bash
+68,   echo 'Olá Mundo',Bash
+69,echo 'Olá Mundo'   ,Bash
+70,echo 'Olá Mundo',Bash
+71,echo 'Olá Mundo'   ,Bash
+72,echo 'Olá Mundo',Bash
+73,   echo 'Olá Mundo'   ,Bash
+74,   cat file.txt   ,bash
+75,cat file.txt,Bash
+76,<a href='index.html'>Home</a>,HTML
+77,   <h1>Hello</h1>,HTML
+78,<ul><li>Item</li></ul>   ,HTML
+79,<p>Parágrafo</p>   ,html
+80,<p>Parágrafo</p>   ,HTML
+81,<p>Parágrafo</p>   ,HTML
+82,   <ul><li>Item</li></ul>,HTML
+83,<p>Parágrafo</p>,HTML
+84,   <ul><li>Item</li></ul>,HTML
+85,   <ul><li>Item</li></ul>,html
+86,<ul><li>Item</li></ul>,HTML
+87,<div class='container'></div>,HTML
+88,   <h1>Hello</h1>,HTML
+89,   <div class='container'></div>,HTML
+90,<p>Parágrafo</p>   ,HTML
