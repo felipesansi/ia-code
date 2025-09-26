@@ -83,5 +83,5 @@ KNN: python
 
 
 
-**Autor:** [Felipe Freitas]  
+**Autor:** Felipe Freitas
 **Licença:** MIT
