@@ -15,34 +15,47 @@
 <body>
     <div class="container">
         <h2>Classificador de Linguagens de Programação</h2>
-            <div style="margin-bottom: 10px; font-size: 0.9em; color: #555;">O modelo pode apresentar falhas nas previsões.</div>
-        <textarea class="margin-bottom-" id="code" placeholder="Cole seu código aqui..."></textarea>
+        <div style="margin-bottom: 10px; font-size: 0.9em; color: #555;">O modelo pode apresentar falhas nas previsões.</div>
+        <textarea id="code" placeholder="Cole seu código aqui..."></textarea>
         <button onclick="PrevisaoLinguagem()">Classificar</button>
         <div class="result" id="result"></div>
     </div>
 
-
     <script>
         async function PrevisaoLinguagem() {
-            const code = document.getElementById("code").value;
+            const code = document.getElementById("code").value.trim();
             const resultDiv = document.getElementById("result");
 
-            if (!code.trim()) {
+            if (!code) {
                 resultDiv.textContent = "Por favor, insira algum código.";
                 return;
             }
 
-            const response = await fetch("/predict", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ code })
-            });
+            try {
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ code })
+                });
 
-            const data = await response.json();
-            if (data.best_prediction) {
-                resultDiv.textContent = "Linguagem prevista: " + data.best_prediction;
-            } else {
-                resultDiv.textContent = "Erro ao tentar prever a linguagem.";
+                if (!response.ok) {
+                    const text = await response.text();
+                    console.error("Erro do servidor:", text);
+                    resultDiv.textContent = "Erro ao conectar com o servidor.";
+                    return;
+                }
+
+                const data = await response.json();
+                if (data.best_prediction) {
+                    resultDiv.textContent = "Linguagem prevista: " + data.best_prediction;
+                } else if (data.error) {
+                    resultDiv.textContent = "Erro: " + data.error;
+                } else {
+                    resultDiv.textContent = "Erro ao tentar prever a linguagem.";
+                }
+            } catch (err) {
+                console.error("Erro:", err);
+                resultDiv.textContent = "Erro na comunicação com o servidor.";
             }
         }
     </script>
