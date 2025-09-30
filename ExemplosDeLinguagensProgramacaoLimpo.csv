@@ -1,0 +1,51 @@
+Language,Code
+python,"print(""hello world"")"
+python,"if x > 10:
+    print(""maior"")"
+python,"for i in range(5):
+    print(i)"
+javascript,"console.log(""hello world"");"
+javascript,"if (x > 10) {
+  console.log(""maior"");
+}"
+javascript,"for (let i = 0; i < 5; i++) {
+  console.log(i);
+}"
+java,"system.out.println(""hello world"");"
+java,"if (x > 10) {
+  system.out.println(""maior"");
+}"
+java,"for (int i = 0; i < 5; i++) {
+  system.out.println(i);
+}"
+c#,"console.writeline(""hello world"");"
+c#,"if (x > 10) {
+  console.writeline(""maior"");
+}"
+c#,"for (int i = 0; i < 5; i++) {
+  console.writeline(i);
+}"
+c,"printf(""hello world\n"");"
+c,"if (x > 10) {
+  printf(""maior\n"");
+}"
+c,"for (int i = 0; i < 5; i++) {
+  printf(""%d\n"", i);
+}"
+c++,"std::cout << ""hello world"" << std::endl;"
+c++,"if (x > 10) {
+  std::cout << ""maior"" << std::endl;
+}"
+c++,"for (int i = 0; i < 5; i++) {
+  std::cout << i << std::endl;
+}"
+typescript,"console.log(""hello world"");"
+typescript,"if (x > 10) {
+  console.log(""maior"");
+}"
+typescript,"for (let i: number = 0; i < 5; i++) {
+  console.log(i);
+}"
+php,"<?php echo ""hello world""; ?>"
+php,"<?php if ($x > 10) { echo ""maior""; } ?>"
+php,<?php for ($i = 0; $i < 5; $i++) { echo $i; } ?>
