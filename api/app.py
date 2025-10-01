@@ -3,13 +3,13 @@ import os, joblib
 
 app = Flask(
     __name__,
-    template_folder="../templates",
-    static_folder="../static"
+    template_folder="templates",
+    static_folder="static"
 )
 
-MODEL_PATH = "../best_model.joblib"
-VECTORIZER_PATH = "../vectorizer.joblib"
-LABEL_ENCODER_PATH = "../label_encoder.joblib"
+MODEL_PATH = "best_model.joblib"
+VECTORIZER_PATH = "vectorizer.joblib"
+LABEL_ENCODER_PATH = "label_encoder.joblib"
 
 def load_artifacts():
     if not all(os.path.exists(p) for p in [MODEL_PATH, VECTORIZER_PATH, LABEL_ENCODER_PATH]):
