@@ -1,28 +1,35 @@
 # Classificador de Linguagem de Programação com Machine Learning
 
-Este projeto utiliza machine learning para classificar trechos de código em diferentes linguagens de programação. Utiliza `pandas`, `scikit-learn` e `Flask` (caso queira API) para ler um dataset, treinar modelos e prever a linguagem de códigos fornecidos pelo usuário.
-
-## Sumário
-
-- [Descrição](#descrição)
-- [Pré-requisitos](#pré-requisitos)
-- [Como funciona](#como-funciona)
-- [Como rodar](#como-rodar)
-- [Exemplo de uso](#exemplo-de-uso)
-- [Estrutura do Código](#estrutura-do-código)
-- [Possíveis melhorias](#possíveis-melhorias)
+Este projeto utiliza técnicas de **Machine Learning** para classificar trechos de código em diferentes linguagens de programação. Desenvolvido com **Flask**, **scikit-learn** e **pandas**, oferece uma API simples para predição.
 
 ---
 
-## Descrição
+## 🚀 Funcionalidades
 
-O script realiza:
-- Limpeza de dados de um arquivo CSV (`code_classification_dirty.csv`)
-- Vetorização dos códigos usando TF-IDF
-- Treinamento de dois modelos: Random Forest e KNN
-- Previsão da linguagem de programação de um código informado pelo usuário
+- **Classificação de código**: Identifica a linguagem de programação de um trecho de código.
+- **API RESTful**: Interface para integração com outras aplicações.
+- **Deploy na Vercel**: Hospedagem contínua com deploy automático via GitHub.
 
-## Pré-requisitos
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- `Flask` - Framework web para construção da API.
+- `scikit-learn` - Biblioteca para construção e treinamento do modelo de ML.
+- `pandas` - Manipulação e análise de dados.
+- `joblib` - Serialização de modelos.
+- `Vercel` - Plataforma de deploy contínuo.
+
+---
+
+## 📦 Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/felipesansi/ia-code.git
+cd ia-code
+
 
 - Python 3.8+
 - pandas
