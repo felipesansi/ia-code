@@ -1,8 +1,10 @@
-/* Fundo e fonte */
+/* ------------------------------ */
+/* Estilo geral do body e fonte */
+/* ------------------------------ */
 body {
     font-family: Arial, sans-serif;
-    background: #343541; 
-    color: #ECECEC;
+    background: #343541 !important; 
+    color: #ECECEC !important;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,32 +13,37 @@ body {
     height: 100vh;
 }
 
+/* ------------------------------ */
 /* Container central */
+/* ------------------------------ */
 .container {
     max-width: 700px;
     width: 100%;
-    background: #40414f;
+    background: #40414f !important;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 12px !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Título */
+/* ------------------------------ */
+/* Título e aviso */
+/* ------------------------------ */
 h2 {
-    color: #ECECEC;
+    color: #ECECEC !important;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* Aviso */
 p {
     text-align: center;
     font-size: 14px;
-    color: #a9a9b3;
+    color: #a9a9b3 !important;
     margin-bottom: 20px;
 }
 
-/* Área de entrada */
+/* ------------------------------ */
+/* Área de entrada e textarea */
+/* ------------------------------ */
 .input-section {
     display: flex;
     flex-direction: column;
@@ -44,88 +51,93 @@ p {
     gap: 10px;
 }
 
-/* Caixa de texto */
-textarea {
-    width: 95%;
-    height: 120px;
-    resize: none;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background: #343541;
-    color: #ECECEC;
-    font-size: 14px;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+textarea.form-control {
+    width: 95% !important;
+    height: 120px !important;
+    resize: none !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    outline: none !important;
+    background: #343541 !important;
+    color: #ECECEC !important;
+    font-size: 14px !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4) !important;
 }
 
-/* Botão */
-button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    background: #10a37f;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
+/* ------------------------------ */
+/* Botão personalizado */
+/* ------------------------------ */
+button.btn {
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: #10a37f !important;
+    color: white !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: 0.2s !important;
 }
 
-button:hover {
-    background: #0d8f6f;
+button.btn:hover {
+    background: #0d8f6f !important;
 }
 
-/* Resultado */
+/* ------------------------------ */
+/* Resultado da previsão */
+/* ------------------------------ */
 #result {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 12px;
-    border-radius: 8px;
-    background: #444654;
-    color: #ECECEC;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    min-height: 40px;
-}
-/* Animação de digitação (3 bolinhas pulando estilo ChatGPT) */
-.typing {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-}
-.typing span {
-    font-size: 14px;
-    color: #a9a9b3;
-    margin-right: 6px;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    background: #444654 !important;
+    color: #ECECEC !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    min-height: 40px !important;
 }
 
+/* ------------------------------ */
+/* Animação de digitação estilo ChatGPT */
+/* ------------------------------ */
+.typing {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+}
+
+.typing span {
+    font-size: 14px !important;
+    color: #a9a9b3 !important;
+    margin-right: 6px !important;
+}
 
 .dot {
-    width: 8px;
-    height: 8px;
-    background: #ECECEC;
-    border-radius: 50%;
-    animation: bounce 1.4s infinite; 
+    width: 8px !important;
+    height: 8px !important;
+    background: #ECECEC !important;
+    border-radius: 50% !important;
+    animation: bounce 1.4s infinite !important; 
 }
 
-
 .dot:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.2s !important;
 }
 
 .dot:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.4s !important;
 }
 
 @keyframes bounce {
     0%, 80%, 100% {
-        transform: scale(0.6);
-        opacity: 0.5;
+        transform: scale(0.6) !important;
+        opacity: 0.5 !important;
     }
     40% {
-        transform: scale(1);
-        opacity: 1;
+        transform: scale(1) !important;
+        opacity: 1 !important;
     }
 }
